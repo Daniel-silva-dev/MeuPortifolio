@@ -1,8 +1,6 @@
 const pipe = document.querySelector('.pipe');
 const mario = document.querySelector('.mario');
 
-let score = 0
-
 const jump = ()=>{
   mario.classList.add('jump');
   setTimeout(()=>{
@@ -29,8 +27,7 @@ const loop = setInterval(()=>{
   
     clearInterval(loop);
   }else{
-    score = score +1
-    console.log(score)
+   
   }
 },10)
 
