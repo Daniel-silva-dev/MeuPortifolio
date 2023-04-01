@@ -1,5 +1,8 @@
 const pipe = document.querySelector('.pipe');
 const mario = document.querySelector('.mario');
+const result = document.querySelector('.points')
+
+let points = 0
 
 const jump = ()=>{
   mario.classList.add('jump');
@@ -8,6 +11,7 @@ const jump = ()=>{
   },500);
 }
 const loop = setInterval(()=>{
+
   const pipePosition = pipe.offsetLeft;
   const marioPosition = +window.getComputedStyle(mario).bottom.replace('px' , '');
   
@@ -19,17 +23,25 @@ const loop = setInterval(()=>{
     mario.src = './imagens/game-over.png';
     mario.style.height = '80px'
     mario.style.marginLeft = '50px'
-
-    setTimeout(() => {
-      window.location.reload(true);
-    }, 1000)
-
   
+     setTimeout(() => {
+      window.location.reload(true);
+     }, 2000)
+
     clearInterval(loop);
-  }else{
-   
+    clearInterval(res);
   }
 },10)
+
+const res = setInterval(()=>{
+ points++
+
+ result.innerHTML=`
+<p>pontos atuais:${points}</p> 
+`
+},1500)
+
+
 
 
 
