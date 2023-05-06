@@ -43,6 +43,12 @@ body{
   animation: mario-animation 500ms ease-out;
 }
 
+.clouds {
+  animation: cloudsMove 15s infinite ease-out;
+  height: 150px;
+  position: relative;
+}
+
 
 @keyframes pipe-animation {
   from {
@@ -84,4 +90,13 @@ body{
 
   }
 }
-        
+
+@keyframes cloudsMove {
+  from {
+    left: 100%;
+  }
+
+  to {
+   left: -400px;
+  }
+}     
