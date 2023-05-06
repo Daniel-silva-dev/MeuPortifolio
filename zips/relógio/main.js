@@ -1,18 +1,18 @@
 function countsDay() {
 
-  const data = new Date();
-  const dia = data.getDate(); // 1-31
-  const dia_sem = data.getDay(); // 0-6 (zero=domingo)
-  const mes = data.getMonth() + 1; // 0-11 (zero=janeiro)
-  const ano4 = data.getFullYear(); // 4 dígitos
-  const hora = data.getHours(); // 0-23
-  const min = data.getMinutes(); // 0-59
+  var data = new Date();
+  var dia = data.getDate(); // 1-31
+  var dia_sem = data.getDay(); // 0-6 (zero=domingo)
+  var mes = data.getMonth() + 1; // 0-11 (zero=janeiro)
+  var ano4 = data.getFullYear(); // 4 dígitos
+  var hora = data.getHours(); // 0-23
+  var min = data.getMinutes(); // 0-59
 
-  const date = window.document.querySelector(".date");
-  const hours = window.document.querySelector(".hours");
-  const semana = window.document.querySelector('.semana');
-  const imagem = window.document.querySelector('.img')
-  const allItens = document.querySelector('.objects')
+  var date = window.document.querySelector(".date");
+  var hours = window.document.querySelector(".hours");
+  var semana = window.document.querySelector('.semana');
+  var imagem = window.document.querySelector('.img')
+  var allItens = document.querySelector('.objects')
 
   if (hora >= 5 && hora < 7) {
     //amanhecer
