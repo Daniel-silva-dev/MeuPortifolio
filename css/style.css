@@ -71,7 +71,6 @@ section.corpo-left {
 
 .border {
   border-bottom: 3px solid gold;
-
 }
 
 .my-name {
@@ -120,16 +119,11 @@ div img.banner {
   margin-top: 20px;
   display: flex;
   justify-content: space-evenly;
-  cursor: pointer;
+  align-items: center;
 }
 
 .logo-unico {
-  width: 40px;
-
-}
-.logo-unico:hover{
-  background-color: #222;
-  border-radius: 0.5rem;
+  width: 20px;
 }
 
 .div-pt2 {
@@ -257,11 +251,6 @@ footer.especificacoes{
     padding-top: 20px;
     margin: 0 auto;
   }
-
- .conhecimento{
-  padding: 1px 20px;
-  max-width: 100%;
-}
 
 
 }
